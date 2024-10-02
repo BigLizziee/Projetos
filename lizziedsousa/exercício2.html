@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média_alunos</title>
+    <style>
+        body {font:12pt Times;
+            background-image: url('https://i.pinimg.com/564x/4c/b5/77/4cb577a1fd6788aec380be6854e4ffc6.jpg');
+            background-size: cover;
+        }
+        button{font-size: 12pt;padding: 50px; border-radius: 4px;}
+    </style>
+</head>
+<body bgcolor="white">
+    <center><h1>Média Alunos</h1></center>
+    <center><h1><font face = "Bernard MT" color="black"></font></h1></center>
+    <center><button onclick="media()"><h1>Iniciar média</h1></button></center>
+    <section id="res">
+        <p>A média vem aqui...</p>
+        
+    </section>
+
+    <script>
+        function media() {
+            let n1 = Number(window.prompt('Digite um número: '))
+            let n2 = Number(window.prompt('Digite outro número: '))
+            let n3 = Number(window.prompt('Digite um número: '))
+            let n4 = Number(window.prompt('Digite outro número: '))
+
+            media = (n1+n2+n3+n4)/4
+
+            
+            let res = document.querySelector('section#res')
+            res.innerHTML = `<p> A soma entre 
+                <mark>${n1}</mark> e 
+                <mark>${n2}</mark> e
+                <mark>${n3}</mark> e
+                <mark>${n4}</mark> 
+                é igual a <strong>${media}</strong>!</p>`
+        }
+
+    </script>
+</body>
+</html>

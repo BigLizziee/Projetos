@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 03</title>
+</head>
+<h1>Formulário</h1>
+<body>
+    <form action="" method="">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required/>
+        <br>
+        <br>
+        <label for="endereço">Endereço:</label>
+        <input type="text" id="endereço" required/>
+        <br>
+        <br>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="Cidade" required/>
+        <br>
+        <br>
+        <label for="status">Estado</label>
+    <select id="status">
+        <option>AC</option>
+        <option>AL</option>
+        <option>AP</option>
+        <option>AM</option>
+        <option>BA</option>
+        <option>CE</option>
+        <option>DF</option>
+        <option>ES</option>
+        <option>GO</option>
+        <option>MA</option>
+        <option>MT</option>
+        <option>MS</option>
+        <option>MG</option>
+        <option>PA</option>
+        <option>PB</option>
+        <option>PR</option>
+        <option>PE</option>
+        <option>PI</option>
+        <option>RJ</option>
+        <option>RN</option>
+        <option>RS</option>
+        <option>RO</option>
+        <option>RR</option>
+        <option>SC</option>
+        <option>SP</option>
+        <option>SE</option>
+        <option>TO</option>
+    </select>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label>Natureza do Cargo</label>
+        <br>
+        <input type="radio" id="Técnico" name="Tipo"/>
+        <label for="Técnico">Gerência</label>
+        <input type="radio" id="Professor" name="Tipo"/>
+        <label for="Professor">Financeiro</label>
+        <input type="radio" id="Aluno" name="Tipo"/>
+        <label for="Aluno">Recepção</label>
+        <input type="radio" id="Aluno" name="Tipo"/>
+        <label for="Aluno">Administração</label>
+        <input type="radio" id="Aluno" name="Tipo"/>
+        <label for="Aluno">Jurídico</label>
+        <br>
+        <br>
+        <label>Área de interesse</label>
+        <br>
+            <input type="checkbox" id="compras" />
+            <label for="compras">computação</label>
+            <input type="checkbox" id="biblioteca"/>
+            <label for="biblioteca">Biologia</label>
+            <input type="checkbox" id="academico"/>
+            <label for="academico">Meio ambiente</label>
+            <input type="checkbox" id="documentação"/>
+            <label for="documentação">Engenharia</label>
+            <input type="checkbox" id="rh"/>
+            <label for="rh">História</label>
+            <br>
+            <br>
+            <label for="Observações">Mini currículo:</label></legend>
+        <textarea id="info" required></textarea>
+    </fieldset>
+    <br>
+    <br>
+        <input type="submit" value="Cadastrar"/>
+        <input type="reset" value="Limpar"/>
+</form>
+</body>
+</html>
